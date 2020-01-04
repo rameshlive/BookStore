@@ -1,0 +1,49 @@
+<section class="section-padding--lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-md-2">
+              <div [hidden]="submitted">
+                  <form  (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                      <div class="form-group">
+                          <input type="text" placeholder="Book Name" class="input100  form-control" id="bookName" [(ngModel)]="book.bookName" name="bookName"  #bookName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && bookName.invalid }" required>
+                          <div *ngIf="f.submitted && bookName.invalid" class="invalid-feedback">
+                            <div *ngIf="bookName.errors.required">Book Name is required</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" placeholder="Author Name" class="input100  form-control" id="authorName" required [(ngModel)]="book.authorName" name="autName" #autName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && autName.invalid }" required>
+                          <div *ngIf="f.submitted && autName.invalid" class="invalid-feedback">
+                            <div *ngIf="autName.errors.required">AuthorName is required</div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                         <p>Select Category</p>
+                          <select [ngModel]="selectedCategory" (ngModelChange)="onChange($event)" name="category" class="input100">
+                              <option *ngFor="let category of categories" [value]="category.catid">{{category.catName}}</option>
+                          </select>
+                          <!--<button (click)="addCategory()">Add Category</button>-->
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="input100 form-control" placeholder="Edition" id="edition"  [(ngModel)]="book.edition" name="edition" #edition="ngModel" [ngClass]="{ 'is-invalid': f.submitted && edition.invalid }" required>
+                        <div *ngIf="f.submitted && edition.invalid" class="invalid-feedback">
+                          <div *ngIf="edition.errors.required">Edition is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="number" class="input100  form-control" placeholder="Price" id="price" [(ngModel)]="book.price" name="price" #price="ngModel" [ngClass]="{ 'is-invalid': f.submitted && price.invalid }" required>
+                        <div *ngIf="f.submitted && price.invalid" class="invalid-feedback">
+                          <div *ngIf="price.errors.required">Price is required</div>
+                        </div>
+                      </div>
+                      <button type="submit" class="login100-form-btn btn btn-success">Submit</button>
+                  </form>
+              </div>
+              <div [hidden]="!submitted">
+                <div class="alert alert-success">
+                    <h4><strong>Success!</strong> Book Created Succesfully</h4>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>    
+</section>

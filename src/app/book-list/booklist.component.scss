@@ -1,0 +1,30 @@
+.shop-grid  {
+    .product {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 15px;
+      .product__thumb {
+            a.second__img {
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition-property: all;
+                transition-timing-function: linear;
+            }
+      }
+    } 
+    .product.product__style--3 {
+        .product__content {
+            background: transparent none repeat scroll 0 0;
+            display: inline-block;
+            padding: 20px 15px;
+            text-align: left;
+        }
+        .product__content.content--center {
+            text-align: center;
+        }
+    }
+} 

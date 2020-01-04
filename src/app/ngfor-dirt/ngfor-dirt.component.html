@@ -1,0 +1,72 @@
+Enter movie name <input type="text" [value]="moviename" [(ngModel)]="moviename"/>
+
+<p>You have entered {{moviename}}</p>
+
+<select [(ngModel)]="selectedValue" >
+    <option *ngFor="let name of names" [value]="name">{{name}}</option>
+</select>
+
+<div class="container" [ngSwitch]="selectedValue">
+    <div *ngFor="let item of names">
+        <div *ngSwitchCase="item" class="btn btn-{{item}}">{{ item | titlecase }}</div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-{{selectedValue}}" (click)="changeValue()">Change Value</button>
+
+<span [ngSwitch]="show">
+<p *ngSwitchCase="true">
+    true value loaded
+</p>
+<p *ngSwitchCase="false">
+        false value loaded
+</p>
+<p *ngSwitchDefault>
+        deafult value loaded
+</p>
+</span>
+
+<ng-container *ngIf="show; else elseTemplate">
+    default container from if block
+</ng-container>
+<ng-template #elseTemplate>
+    from else block
+</ng-template>
+
+<br/>
+
+<div [ngClass]="'btn btn-success fontsize20'">
+    ngclass info - String
+</div>
+
+<div [ngClass]="stringVar">
+    ngclass info - String
+</div>
+
+<div ngClass="btn btn-info">
+    ngclass info - String
+</div>
+
+<div [ngClass]="stringArr">
+    ngclass btn-primary - Array
+</div>
+
+<div [ngClass]="{'red': true,'btn':true,'btn-warning':true}">
+    ngClass Object
+</div>
+
+<div [ngClass]="cssclass">
+    ngClass Object
+</div>
+
+Enter the color : <input type="text"  [(ngModel)]="btnColor"/>
+
+<div></div>
+<label>Select Color : </label>
+<select [(ngModel)]="selectedColor">
+    <option *ngFor="let color of colors" [value]="color">{{color}}</option>
+</select>
+
+<div [ngStyle]="{'background-color' : selectedColor === 'red' ? 'red' : 'green', 'color' : '#fff'}" [ngClass]="{'btn': true}">
+    Change bg Dynamically
+</div>

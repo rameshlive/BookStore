@@ -1,0 +1,30 @@
+/*--------------------------
+  Shop Single Styles
+----------------------------*/
+.wedget__title {
+    border-bottom: 1px solid #2e2e2e;
+    color: #2e2e2e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .wedget__categories.poroduct--cat {
+margin: 0 0 30px; }
+.wedget__categories.poroduct--cat ul li {
+border-bottom: 1px dashed #e1e1e1;
+line-height: 45px;
+text-align: left;
+text-transform: capitalize; }
+.wedget__categories.poroduct--cat ul li a {
+color: #333;
+font-size: 14px;
+font-weight: 400;display: block;
+cursor: pointer; }
+.wedget__categories.poroduct--cat ul li a:hover {
+color: #e59285; }
+.wedget__categories.poroduct--cat ul li a span {
+color: #333;
+float: right; }
+        

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EAAC,KAAK,EAAC,MAAM;CAAE;;AACjB,AAAA,WAAW,CAAA;EAAC,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "ngfor-dirt.component.scss"
+    ],
+    "names": [],
+    "file": "ngfor-dirt.component.css"
+}

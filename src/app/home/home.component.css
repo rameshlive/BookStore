@@ -1,0 +1,49 @@
+/* No CSS *//*# sourceMappingURL=home.component.css.map */
+.home{
+    height: calc(100vh - 350px);
+    background-size: cover;
+}
+.section-header {
+    color: #FFF;
+}
+.section-header {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 0 !important;
+    margin: 0 auto;
+    vertical-align: top;
+    position: relative;
+    background-color: #4d9de0;
+}
+.section-header figure {
+    display: flex !important;
+    display: -webkit-flex !important;
+    margin: auto;
+    max-width: 1200px;
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.section-header figure .banner-grphics + figcaption {
+    vertical-align: middle;
+    padding-bottom: 0;
+    max-width: 60%;
+    padding-top: 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-wrap-inner figcaption .button-block {
+    margin: 30px -10px 0;
+}
+.section-header figure figcaption .btn.btn-primary {
+    background-color: #FFF;
+    color: #444444;
+}

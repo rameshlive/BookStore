@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "bookName": "test",
+      "autName": "ramesh",
+      "categoryid": 1,
+      "edition": "Male",
+      "price": 750,
+      "thum": "Web"
+    },
+    {
+      "id": 2,
+      "bookName": "test",
+      "autName": "ND",
+      "categoryid": 1,
+      "edition": "Male",
+      "price": 750,
+      "thum": "Web"
+    },
+    {
+      "id": 3,
+      "bookName": "test",
+      "autName": "ND",
+      "categoryid": 2,
+      "edition": "Male",
+      "price": 750,
+      "thum": "Web"
+    },
+    {
+      "id": 4,
+      "bookName": "Ramayanam",
+      "autName": "ND",
+      "categoryid": 3,
+      "edition": "Male",
+      "price": 750,
+      "thum": "Web"
+    },
+    {
+      "id": 5,
+      "bookName": "Harry Potter",
+      "autName": "ND5",
+      "categoryid": 4,
+      "edition": "Male",
+      "price": 2345,
+      "thum": "Web"
+    },
+    {
+      "id": 6,
+      "bookName": "test",
+      "autName": "ND",
+      "categoryid": 4,
+      "edition": "Male",
+      "price": 750,
+      "thum": "Web"
+    },
+    {
+      "bookName": "Test",
+      "authorName": "test",
+      "categoryid": 3,
+      "edition": "dd",
+      "price": 43243,
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "catid": 1,
+      "catName": "Biography"
+    },
+    {
+      "catid": 2,
+      "catName": "Business"
+    },
+    {
+      "catid": 3,
+      "catName": "Cookbooks"
+    },
+    {
+      "catid": 4,
+      "catName": "History"
+    },
+    {
+      "catid": 5,
+      "catName": "Mystery"
+    },
+    {
+      "catid": 6,
+      "catName": "Inspiration"
+    }
+  ]
+}
